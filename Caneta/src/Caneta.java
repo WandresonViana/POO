@@ -16,15 +16,15 @@ public class Caneta {
 
     public void rabiscar(){
         if(this.tampada == false){
-            System.out.println("A caneta está rabiscando!");
+            System.out.println("A caneta " + this.modelo + " está rabiscando!");
         }else{
-            System.out.println("A caneta está tampada, não posso rabiscar!");
+            System.out.println("A caneta " + this.modelo + " está tampada, não posso rabiscar!");
         }
     }
 
     public void tampar(){
         if(tampada == true){
-            System.out.println("A caneta já está tampada");
+            System.out.println("A caneta" + this.modelo + " já está tampada!");
         }else{
             tampada = true;
         }
@@ -35,7 +35,7 @@ public class Caneta {
         if(tampada == true){
             tampada = false;
         }else{
-            System.out.printf("A caneta %s já está destampada!", this.modelo);
+            System.out.println("A caneta" + this.modelo + " já está tampada!");
         }
 
     }
