@@ -3,19 +3,20 @@ public class Caneta {
     String cor;
     int carca;
     float ponta;
-    boolean tampada = true;
+    boolean tampada;
 
     public Caneta(String modelo, String cor, int carca, float ponta) {
         this.modelo = modelo;
         this.cor = cor;
         this.carca = carca;
         this.ponta = ponta;
+        this.tampada = true;
     }
 
 
     public void rabiscar(){
-        if(tampada == false){
-            
+        if(this.tampada == false){
+
         }
     }
 
