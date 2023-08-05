@@ -35,7 +35,7 @@ public class Caneta {
         if(tampada == true){
             tampada = false;
         }else{
-            System.out.println("A caneta já está destampada!");
+            System.out.printf("A caneta %s já está destampada!", this.modelo);
         }
 
     }
