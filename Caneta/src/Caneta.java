@@ -16,7 +16,9 @@ public class Caneta {
 
     public void rabiscar(){
         if(this.tampada == false){
-
+            System.out.println("A caneta está rabiscando!");
+        }else{
+            System.out.println("A caneta está tampada, não posso rabiscar!");
         }
     }
 
