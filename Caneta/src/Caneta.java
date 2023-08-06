@@ -16,6 +16,7 @@ public class Caneta {
     //Metodos
 
     public void status(){
+        System.out.println("----------------------------------------------------------------------");
         System.out.println("Modelo: " + this.modelo);
         System.out.println("Cor: " + this.cor);
         System.out.println("Carga: " + this.carca + "%");
