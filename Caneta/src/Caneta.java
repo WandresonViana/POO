@@ -14,6 +14,19 @@ public class Caneta {
     }
 
     //Metodos
+
+    public void estatus(){
+        System.out.println("Modelo: " + this.modelo);
+        System.out.println("Cor: " + this.cor);
+        System.out.println("Carga: " + this.carca + "%");
+        System.out.println("Ponta: " + this.ponta);
+        if(tampada == true){
+            System.out.println("Tampada");
+        }else{
+            System.out.println("Destampada");
+        }
+
+    }
     public void rabiscar(){
         if(this.tampada == false && this.carca > 0){
             System.out.println("A caneta " + this.modelo + " está rabiscando!");
@@ -36,8 +49,7 @@ public class Caneta {
             tampada = false;
         }else{
             System.out.println("A caneta" + this.modelo + " já está tampada!");
-        }
-
+        } 
     }
 
    
