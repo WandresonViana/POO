@@ -4,7 +4,7 @@ public class Caneta {
     int carca;
     float ponta;
     boolean tampada;
-
+    //construtor
     public Caneta(String modelo, String cor, int carca, float ponta) {
         this.modelo = modelo;
         this.cor = cor;
@@ -13,7 +13,7 @@ public class Caneta {
         this.tampada = true;
     }
 
-
+    //Metodos
     public void rabiscar(){
         if(this.tampada == false && this.carca > 0){
             System.out.println("A caneta " + this.modelo + " está rabiscando!");
