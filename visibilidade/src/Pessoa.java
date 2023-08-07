@@ -12,6 +12,10 @@ public class Pessoa {
         this.peso = peso;
     }
 
+
+
+    
+    //metodos acessores
     public String getNomePe() {
         return nomePe;
     }
