@@ -12,9 +12,16 @@ public class Pessoa {
         this.peso = peso;
     }
 
+    public void informacoes(){
+        System.out.println("Iniciando pessoa: ");
+        System.out.println("Nome: " + getNomePe());
+        System.out.println("Idade: " + getIdade());
+        System.out.println("Altura: " + getAltura());
+        System.out.println("Peso: " + getPeso());
+
+    }
 
 
-    
     //metodos acessores
     public String getNomePe() {
         return nomePe;
