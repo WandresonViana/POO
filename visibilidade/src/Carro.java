@@ -3,7 +3,8 @@ public class Carro {
     private Pessoa motorista;
     private float velocidade;
     private boolean ligado;
-
+    
+    //Construtor
     public Carro(String modelo, Pessoa motorista) {
         this.modelo = modelo;
         this.motorista = motorista;
@@ -11,6 +12,17 @@ public class Carro {
         this.ligado = false;
     }
 
+
+    public void ligarCarro(){
+        if(this.isLigado() == true){
+            System.out.println("O carro está ligado!");
+        }else{
+            this.setLigado(true);
+            System.out.println("Frummmm....");
+        }
+    }
+
+    //Metodos Get e set
     public String getModelo() {
         return modelo;
     }
