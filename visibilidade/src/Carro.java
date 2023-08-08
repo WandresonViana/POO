@@ -11,6 +11,39 @@ public class Carro {
         this.ligado = false;
     }
 
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public Pessoa getMotorista() {
+        return motorista;
+    }
+
+    public void setMotorista(Pessoa motorista) {
+        this.motorista = motorista;
+    }
+
+    public float getVelocidade() {
+        return velocidade;
+    }
+
+    public void setVelocidade(float velocidade) {
+        this.velocidade = velocidade;
+    }
+
+    public boolean isLigado() {
+        return ligado;
+    }
+
+    public void setLigado(boolean ligado) {
+        this.ligado = ligado;
+    }
+    
+
     
 
     
