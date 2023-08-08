@@ -22,6 +22,13 @@ public class Carro {
         }
     }
 
+    public void infoCarro(){
+        System.out.println("Modelo do carro: " + this.getModelo());
+        System.out.println("Proprietário: " + this.getMotorista());
+        System.out.println("Carro ligado?" + this.isLigado());
+        System.out.println("Velocidade: " + this.getVelocidade() +  "Km/s");
+    }
+
     //Metodos Get e set
     public String getModelo() {
         return modelo;
