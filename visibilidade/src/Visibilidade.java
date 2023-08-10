@@ -6,6 +6,7 @@ public class Visibilidade {
 
         Carro gol = new Carro("Gol", maria);
         gol.ligarCarro();
+        gol.acelerar();
         gol.infoCarro();
         
     }

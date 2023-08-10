@@ -27,6 +27,12 @@ public class Carro {
         }
     }
 
+    public void acelerar(){
+        if(this.ligado == true){
+            this.setVelocidade(this.getVelocidade()+ 20);
+        }
+    }
+
     
 
     //Metodos Get e set
