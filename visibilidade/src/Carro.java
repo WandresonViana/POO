@@ -36,6 +36,14 @@ public class Carro {
         }
     }
 
+    public void freiar(){
+        if(this.velocidade > 0){
+            this.setVelocidade(this.getVelocidade() - 20);
+        }else{
+            System.out.println("O carro está parado!");
+        }
+    }
+
     
 
     //Metodos Get e set
