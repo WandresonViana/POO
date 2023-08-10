@@ -13,6 +13,7 @@ public class Carro {
     }
 
     public void infoCarro(){
+        System.out.println("#############################################################");
         System.out.println("Modelo do carro: " + this.getModelo());
         System.out.println("Proprietário: " + motorista.getNomePe());
         System.out.println("Carro ligado?" + this.isLigado());
@@ -23,7 +24,7 @@ public class Carro {
             System.out.println("O carro está ligado!");
         }else{
             this.setLigado(true);
-            System.out.println("Frummmm....");
+            System.out.println("Ligando o carro!");
         }
     }
 
