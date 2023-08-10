@@ -12,7 +12,12 @@ public class Carro {
         this.ligado = false;
     }
 
-
+    public void infoCarro(){
+        System.out.println("Modelo do carro: " + this.getModelo());
+        System.out.println("Proprietário: " + motorista.getNomePe());
+        System.out.println("Carro ligado?" + this.isLigado());
+        System.out.println("Velocidade: " + this.getVelocidade() +  "Km/s");
+    }
     public void ligarCarro(){
         if(this.isLigado() == true){
             System.out.println("O carro está ligado!");
@@ -22,12 +27,7 @@ public class Carro {
         }
     }
 
-    public void infoCarro(){
-        System.out.println("Modelo do carro: " + this.getModelo());
-        System.out.println("Proprietário: " + motorista.getNomePe());
-        System.out.println("Carro ligado?" + this.isLigado());
-        System.out.println("Velocidade: " + this.getVelocidade() +  "Km/s");
-    }
+    
 
     //Metodos Get e set
     public String getModelo() {

@@ -5,6 +5,7 @@ public class Visibilidade {
         maria.informacoes();
 
         Carro gol = new Carro("Gol", maria);
+        gol.ligarCarro();
         gol.infoCarro();
         
     }
