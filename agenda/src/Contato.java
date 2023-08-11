@@ -4,12 +4,14 @@ public class Contato {
     private int telefone;
     private String email;
 
+    public Contato(int id, String nomeContato, int telefone, String email) {
+        this.id = id;
+        this.nomeContato = nomeContato;
+        this.telefone = telefone;
+        this.email = email;
+    }
 
-
-
-
-
-
+    
     public int getId() {
         return id;
     }
