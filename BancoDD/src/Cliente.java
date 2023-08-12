@@ -1,5 +1,5 @@
 public class Cliente {
-    private int id;
+    private int CPF;
     private String nomeCliente;
-    
+
 }
