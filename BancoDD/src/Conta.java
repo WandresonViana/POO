@@ -26,7 +26,11 @@ public class Conta {
     }
 
     public void fecharConta(){
-        
+        if(this.isStatus() == true && this.getSaldo() == 0){
+            this.setStatus(false);
+        }else{
+            System.out.println("A conta está fechada!");
+        }
     }
 
     public void sacar(){
