@@ -5,5 +5,11 @@ public class Conta {
     private float saldo;
     private boolean status;
 
-    
+    public void abrirConta(){
+
+    }
+
+    public void fecharConta(){
+        
+    }
 }
