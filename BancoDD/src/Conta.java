@@ -16,8 +16,11 @@ public class Conta {
     }
 
     public void abrirConta(){
-        if(this.status == true){
-            
+        if(this.status == false){
+            this.setStatus(true);
+
+        }else{
+            System.out.println("A conta já esta aberta!");
         }
 
     }
