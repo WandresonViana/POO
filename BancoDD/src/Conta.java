@@ -1,7 +1,7 @@
 public class Conta {
     private int numeroConta;
     private String tipo;
-    private Pessoa dono;
+    private Cliente dono;
     private float saldo;
     private boolean status;
 
@@ -11,5 +11,13 @@ public class Conta {
 
     public void fecharConta(){
         
+    }
+
+    public void sacar(){
+
+    }
+
+    public void depositar(){
+
     }
 }
