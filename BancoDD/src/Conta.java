@@ -26,7 +26,7 @@ public class Conta {
     }
 
     public void fecharConta(){
-        if(this.isStatus() == true && this.getSaldo() == 0){
+        if(this.isStatus() && this.getSaldo() == 0){
             this.setStatus(false);
         }else{
             System.out.println("A conta está fechada!");
@@ -34,21 +34,23 @@ public class Conta {
     }
 
     public void sacar(float valor){
-        if(this.isStatus() && getSaldo() > 0){
+        if(this.isStatus() && getSaldo() > valor){
             if(valor > 0){
                 this.setSaldo(this.getSaldo() - valor);
+            }else{
+                System.out.println("Saldo insuficiente!");
             }
 
         }
 
     }
 
-    public void depositar(){
+    public void depositar(float valor){
+        if(this.isStatus() && valor > 0){
+
+        }
 
     }
-
-
-
 
     public int getNumeroConta() {
         return numeroConta;
