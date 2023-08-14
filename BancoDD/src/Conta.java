@@ -33,7 +33,13 @@ public class Conta {
         }
     }
 
-    public void sacar(){
+    public void sacar(float valor){
+        if(this.isStatus() && getSaldo() > 0){
+            if(valor > 0){
+                this.setSaldo(this.getSaldo() - valor);
+            }
+
+        }
 
     }
 
