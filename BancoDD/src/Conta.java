@@ -34,8 +34,8 @@ public class Conta {
     }
 
     public void sacar(float valor){
-        if(this.isStatus() && getSaldo() > valor){
-            if(valor > 0){
+        if(this.isStatus() ){
+            if(valor > 0 && getSaldo() > valor){
                 this.setSaldo(this.getSaldo() - valor);
             }else{
                 System.out.println("Saldo insuficiente!");
