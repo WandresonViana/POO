@@ -41,6 +41,8 @@ public class Conta {
                 System.out.println("Saldo insuficiente!");
             }
 
+        }else{
+            System.out.println("A conta está fechada!");
         }
 
     }
