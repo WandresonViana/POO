@@ -55,7 +55,7 @@ public class Conta {
     }
 
     public void pagarMesalidade(){
-        
+
     }
 
     public int getNumeroConta() {
@@ -98,7 +98,11 @@ public class Conta {
         this.status = status;
     }
 
+    public void infoConta(){
+        System.out.println("Conta: " + this.getNumeroConta());
+        System.out.println("Titular: " + this.getDono());
+        System.out.println("Saldo: R$" + this.getSaldo());
+        
+    }
 
-
-    
 }

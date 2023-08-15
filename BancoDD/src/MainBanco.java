@@ -4,5 +4,7 @@ public class MainBanco {
         Conta cpedro = new Conta(25854, "PP", pedro);
         cpedro.abrirConta();
         cpedro.sacar(150);
+
+        cpedro.infoConta();
     }
 }
