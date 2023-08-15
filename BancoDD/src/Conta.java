@@ -15,12 +15,16 @@ public class Conta {
         this.status = false;
     }
 
-    public void abrirConta(){
-        if(this.status == false){
-            this.setStatus(true);
+    public void abrirConta( String tipo){
+        if(tipo == "PF" || tipo == "PJ" ){
+            if(this.status == false){
+                this.setStatus(true);
 
+            }else{
+                System.out.println("A conta já esta aberta!");
+            }
         }else{
-            System.out.println("A conta já esta aberta!");
+            System.out.println("Tipo de conta inválido!");
         }
 
     }
