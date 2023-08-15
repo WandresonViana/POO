@@ -100,7 +100,7 @@ public class Conta {
 
     public void infoConta(){
         System.out.println("Conta: " + this.getNumeroConta());
-        System.out.println("Titular: " + this.getDono());
+        System.out.println("Titular: " + dono.getNomeCliente());
         System.out.println("Saldo: R$" + this.getSaldo());
         
     }
