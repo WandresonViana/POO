@@ -54,6 +54,10 @@ public class Conta {
 
     }
 
+    public void pagarMesalidade(){
+        
+    }
+
     public int getNumeroConta() {
         return numeroConta;
     }
