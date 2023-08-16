@@ -15,8 +15,8 @@ public class Conta {
         this.status = false;
     }
 
-    public void abrirConta( String tipo){
-        if(tipo == "PF" || tipo == "PJ" ){
+    public void abrirConta(){
+        if(this.tipo == "PF" || this.tipo == "PJ" ){
             if(this.status == false){
                 this.setStatus(true);
 
