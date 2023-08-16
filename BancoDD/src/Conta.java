@@ -53,6 +53,7 @@ public class Conta {
 
     public void depositar(float valor){
         if(this.isStatus() && valor > 0){
+            this.setSaldo(this.getSaldo() + valor);
 
         }
 
