@@ -5,6 +5,7 @@ public class MainBanco {
         cpedro.abrirConta();
         cpedro.depositar(350);
         cpedro.sacar(150);
+        cpedro.pagarMesalidade();
 
         cpedro.infoConta();
     }
