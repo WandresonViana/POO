@@ -63,9 +63,15 @@ public class Conta {
         if(this.getSaldo() > 0){
             if(this.getTipo() == "PF"){
                 this.setSaldo(this.getSaldo() - 20);
+            }else{
+                 if(this.getTipo() == "PJ"){
+                    this.setSaldo(this.getSaldo() - 40);
+                 }
             }
 
 
+        }else{
+            System.out.println("Saldo insuficiente!");
         }
 
     }
