@@ -119,6 +119,7 @@ public class Conta {
     public void infoConta(){
         System.out.println("Conta: " + this.getNumeroConta());
         System.out.println("Titular: " + dono.getNomeCliente());
+        System.out.println("Tipo de conta: " + this.getTipo());
         System.out.println("Saldo: R$" + this.getSaldo());
         
     }
