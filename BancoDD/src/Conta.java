@@ -60,8 +60,9 @@ public class Conta {
     }
 
     public void pagarMesalidade(){
-        if(this.getTipo() == "PF"){
-            
+        if(this.getTipo() == "PF" && this.getSaldo() > 0){
+
+
         }
 
     }
