@@ -1,4 +1,4 @@
-public class Agenda {
+public class MenuAgenda {
     private Contato novoContato;
     private String sair = " ";
 
