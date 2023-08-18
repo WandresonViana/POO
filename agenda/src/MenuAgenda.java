@@ -1,13 +1,19 @@
+import java.util.Scanner;
+
 public class MenuAgenda {
-    private Contato novoContato;
     private String sair = " ";
 
+
+    Scanner entra = new Scanner(System.in);
 
 
     public void menuAgenda(){
         do{
+            System.out.println("Bem vindo a agenda!");
 
-        }while(sair.equals("S"));
+            System.out.print("Digite [S] para sair: ");
+            this.sair = entra.nextLine();
+        }while(sair.equals(" "));
     }
 
 }
