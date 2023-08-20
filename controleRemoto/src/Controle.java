@@ -98,12 +98,16 @@ public void desligarMudo() {
 
 @Override
 public void play() {
-    
+    if(this.isLigado() && !(this.isTocando())){
+        this.setTocando(true);
+    }
 }
 
 @Override
 public void pause() {
-    
+    if(this.isLigado() && this.isTocando()){
+        this.setTocando(false);
+    }
 } 
  
 }
