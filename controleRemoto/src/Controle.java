@@ -35,64 +35,53 @@ public void setTocando(boolean tocando) {
 
 @Override
 public void ligar() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'ligar'");
+    this.setLigado(true);
+    
 }
 
 @Override
 public void desligar() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'desligar'");
+    
 }
 
 @Override
 public void abrirMenu() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'abrirMenu'");
+    
 }
 
 @Override
 public void fecharMenu() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'fecharMenu'");
+    
 }
 
 @Override
 public void maisVolume() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'maisVolume'");
+    
 }
 
 @Override
 public void menosVolume() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'menosVolume'");
+    
 }
 
 @Override
 public void ligarMudo() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'ligarMudo'");
+   
 }
 
 @Override
 public void desligarMudo() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'desligarMudo'");
+    
 }
 
 @Override
 public void play() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'play'");
+    
 }
 
 @Override
 public void pause() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'pause'");
+    
 } 
-
-
-   
+ 
 }
