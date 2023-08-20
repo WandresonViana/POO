@@ -41,16 +41,24 @@ public void ligar() {
 
 @Override
 public void desligar() {
+    this.setLigado(false);
     
 }
 
 @Override
 public void abrirMenu() {
+    System.out.println("Esta ligado? " + this.isLigado());
+    System.out.println("Está tocando: " + this.isTocando());
+    System.out.print("Volume: " + this.getVolume());
+    for(int i = 0; i<= getVolume(); i+=10){
+        System.out.print("||");
+    }
     
 }
 
 @Override
 public void fecharMenu() {
+    System.out.println("Fechando menu!");
     
 }
 
