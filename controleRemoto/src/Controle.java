@@ -65,20 +65,26 @@ public void fecharMenu() {
 @Override
 public void maisVolume() {
     if(this.isLigado()){
-
+        this.setVolume(this.getVolume() + 1);
     }else{
-        
+        System.out.println("Desligado!");
     }
     
 }
 
 @Override
 public void menosVolume() {
+    if(this.isLigado()){
+        this.setVolume(this.getVolume() - 1);
+    }else{
+        System.out.println("Aparelho desligado!");
+    }
     
 }
 
 @Override
 public void ligarMudo() {
+    
    
 }
 
