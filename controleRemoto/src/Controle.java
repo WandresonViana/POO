@@ -64,6 +64,11 @@ public void fecharMenu() {
 
 @Override
 public void maisVolume() {
+    if(this.isLigado()){
+
+    }else{
+        
+    }
     
 }
 
