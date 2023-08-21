@@ -53,6 +53,7 @@ public void abrirMenu() {
     for(int i = 0; i<= getVolume(); i+=10){
         System.out.print("||");
     }
+    System.out.println(" ");
     
 }
 
@@ -100,6 +101,7 @@ public void desligarMudo() {
 public void play() {
     if(this.isLigado() && !(this.isTocando())){
         this.setTocando(true);
+        System.out.println("Tocando....");
     }
 }
 
