@@ -1,10 +1,10 @@
 public class Contato {
     private int id;
     private String nomeContato;
-    private double telefone;
+    private String telefone;
     private String email;
 
-    public Contato(int id, String nomeContato, double telefone, String email) {
+    public Contato(int id, String nomeContato, String telefone, String email) {
         this.id = id;
         this.nomeContato = nomeContato;
         this.telefone = telefone;
@@ -31,10 +31,10 @@ public class Contato {
     public void setNomeContato(String nomeContato) {
         this.nomeContato = nomeContato;
     }
-    public double getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
-    public void setTelefone(int telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
     public String getEmail() {
