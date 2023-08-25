@@ -98,8 +98,14 @@ public class Lutador {
     }
 
 
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+    public void setCategoria() {
+        if(this.getPeso() < 52.2){
+            this.categoria = "Inválido";
+        }else{
+            if(this.getPeso() <=70){
+                this.categoria = "Leve";
+            }
+        }
     }
 
 
@@ -131,11 +137,5 @@ public class Lutador {
     public void setEmpates(int empates) {
         this.empates = empates;
     }
-
-
-
-
-    
-    
-
+ 
 }
