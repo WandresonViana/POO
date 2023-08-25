@@ -7,7 +7,7 @@ public class Cliente {
 
 
     public Cliente(int cPF, String nomeCliente, String email, char sexo) {
-        cPF = cPF;
+        this.cPF = cPF;
         this.nomeCliente = nomeCliente;
         this.email = email;
         this.sexo = sexo;
