@@ -104,22 +104,19 @@ public class Lutador {
     private void setCategoria() {
         if(this.getPeso() < 52.2){
             this.categoria = "Inválido";
-        }else{
-            if(this.getPeso() <=70){
-                this.categoria = "Leve";
+        }else if(this.getPeso() <=70){
+            this.categoria = "Leve";
+        }else if(this.getPeso() <= 80.9){
+            this.categoria = "Médio";
+        }else if(this.getPeso() <= 120.2){
+            this.categoria = "Pesado";
             }else{
-                if(this.getPeso() <= 80.9){
-                    this.categoria = "Médio";
-                }else{
-                    if(this.getPeso() <= 120.2){
-                        this.categoria = "Pesado";
-                    }else{
-                        this.categoria = "Inválido";
-                    }
+                this.categoria = "Inválido";
                 }
-            }
-        }
     }
+    
+        
+    
 
 
     public int getVitorias() {
