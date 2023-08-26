@@ -104,6 +104,12 @@ public class Lutador {
         }else{
             if(this.getPeso() <=70){
                 this.categoria = "Leve";
+            }else{
+                if(this.getPeso() <= 80.9){
+                    this.categoria = "Médio";
+                }else{
+                    if
+                }
             }
         }
     }
