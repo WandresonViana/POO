@@ -10,19 +10,19 @@ public class Lutador {
     private int derrotas;
     private int empates;
 
-
+    //Construtor
     public Lutador(String nomeLutador, String nacionalidade, int idade, float altura, float peso,int vitorias, int derrotas, int empates) {
         this.nomeLutador = nomeLutador;
         this.nacionalidade = nacionalidade;
         this.idade = idade;
         this.altura = altura;
-        this.peso = peso;
+        this.setPeso(peso);
         this.vitorias = vitorias;
         this.derrotas = derrotas;
         this.empates = empates;
     }
 
-
+    //Métodos
     public void apresentar(){
 
     }
