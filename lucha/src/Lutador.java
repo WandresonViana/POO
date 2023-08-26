@@ -1,4 +1,5 @@
 public class Lutador {
+    //Atributos
     private String nomeLutador;
     private String nacionalidade;
     private int idade;
