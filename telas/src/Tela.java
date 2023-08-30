@@ -26,7 +26,10 @@ public class Tela extends JFrame{
         this.setVisible(true);
         this.setLayout(null);
         this.setTitle("Tela login");
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
+        
+        //Definindo componentes
         login.setBounds(40, 40, 80, 25);
         senha.setBounds(40, 70, 80, 25);
         jLogin.setBounds(130, 40, 130, 25);
