@@ -27,12 +27,22 @@ public class Tela extends JFrame{
         this.setLayout(null);
         this.setTitle("Tela login");
 
-        login.setBounds(30, 40, 80, 25);
+        login.setBounds(40, 40, 80, 25);
+        senha.setBounds(40, 70, 80, 25);
+        jLogin.setBounds(130, 40, 130, 25);
+        jSenha.setBounds(130, 70, 130, 25);
+        b1.setBounds(40, 120, 100, 25);
+        b2.setBounds(160, 120, 100, 25);
 
         
 
         //Adicionando a tela
         this.add(login);
+        this.add(senha);
+        this.add(jLogin);
+        this.add(jSenha);
+        this.add(b1);
+        this.add(b2);
     }
     
 }
