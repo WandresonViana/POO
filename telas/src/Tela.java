@@ -23,12 +23,11 @@ public class Tela extends JFrame{
 
     public void montarTela(){
         this.setBounds(EXIT_ON_CLOSE, 100, 400, 200);
-        this.setVisible(true);
         this.setLayout(null);
         this.setTitle("Tela login");
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-        
+
         //Definindo componentes
         login.setBounds(40, 40, 80, 25);
         senha.setBounds(40, 70, 80, 25);
@@ -46,6 +45,9 @@ public class Tela extends JFrame{
         this.add(jSenha);
         this.add(b1);
         this.add(b2);
+
+
+        this.setVisible(true);
     }
     
 }
