@@ -3,4 +3,8 @@ public class Luta {
     private Lutador desafiante;
     private int rounds;
     private boolean aprovado; 
+
+    public void marcarLuta(){
+
+    }
 }
