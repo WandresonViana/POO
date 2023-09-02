@@ -29,8 +29,8 @@ public class Luta {
 
             switch(vencedor){
                 case 0: // Empate
-                case 1:// Desafiado vence
-                case 2:// Desafiante vence
+                case 1: // Desafiado vence
+                case 2: // Desafiante vence
             }
 
         }else{
