@@ -9,6 +9,10 @@ public class Luta {
            this.aprovado = true;
            this.desafiado = l1;
            this.desafiante = l2; 
+        }else{
+            this.aprovado = false;
+            this.desafiado = null;
+            this.desafiante = null;
         }
     }
     public void lutar(){
