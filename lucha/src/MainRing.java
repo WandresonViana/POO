@@ -15,7 +15,7 @@ public class MainRing {
 
 
         Luta UEC01 = new Luta();
-        UEC01.marcarLuta(l[1], l[1]);
+        UEC01.marcarLuta(l[4], l[3]);
         UEC01.lutar();
 
     }
