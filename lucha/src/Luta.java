@@ -16,8 +16,14 @@ public class Luta {
         }
     }
     public void lutar(){
-        if(this.aprovado == true){
+        if(this.aprovado){
+            System.out.println("##### DESAFIADO #####");
+            this.desafiado.apresentar();
+            System.out.println("##### DESAFIANTE #####");
+            this.desafiante.apresentar();
 
+        }else{
+            System.out.println("A luta não pode acontecer!");
         }
     }
    
