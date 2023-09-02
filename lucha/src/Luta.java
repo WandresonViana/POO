@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Luta {
     private Lutador desafiado;
     private Lutador desafiante;
@@ -21,6 +23,15 @@ public class Luta {
             this.desafiado.apresentar();
             System.out.println("##### DESAFIANTE #####");
             this.desafiante.apresentar();
+
+            Random aleatorio = new Random();
+            int vencedor = aleatorio.nextInt(3);
+
+            switch(vencedor){
+                case 0: // Empate
+                case 1:// Desafiado vence
+                case 2:// Desafiante vence
+            }
 
         }else{
             System.out.println("A luta não pode acontecer!");
