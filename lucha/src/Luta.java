@@ -29,8 +29,20 @@ public class Luta {
 
             switch(vencedor){
                 case 0: // Empate
+                    System.out.println("Empatou!");
+                    this.desafiado.empatarLuta();
+                    this.desafiante.empatarLuta();
+                    break;
                 case 1: // Desafiado vence
+                    System.out.println("Venceu o lutador " + this.desafiado.getNomeLutador());
+                    this.desafiado.ganharLuta();
+                    this.desafiante.perderLuta();
+                    break;
                 case 2: // Desafiante vence
+                    System.out.println("Venceu o lutador " + this.desafiante.getNomeLutador());
+                    this.desafiado.perderLuta();
+                    this.desafiante.ganharLuta();
+                    break;
             }
 
         }else{
