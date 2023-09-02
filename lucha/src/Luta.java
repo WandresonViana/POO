@@ -10,6 +10,8 @@ public class Luta {
            this.desafiado = l1;
            this.desafiante = l2; 
         }
-
+    }
+    public void lutar(){
+        
     }
 }
