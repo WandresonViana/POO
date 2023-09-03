@@ -7,17 +7,17 @@ public class Livro {
     private Pessoa leitor;
 
     //Construtor
-    public Livro(String titulo, String autor, int totPaginas, int paginaAtual, boolean aberto, Pessoa leitor) {
+    public Livro(String titulo, String autor, int totPaginas, Pessoa leitor) {
         this.titulo = titulo;
         this.autor = autor;
         this.totPaginas = totPaginas;
-        this.paginaAtual = paginaAtual;
-        this.aberto = aberto;
+        this.paginaAtual = 0;
+        this.aberto = false;
         this.leitor = leitor;
     }
 
     public void detalhes(){
-        
+
     }
 
 
