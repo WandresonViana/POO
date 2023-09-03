@@ -2,6 +2,9 @@ public class Pessoa {
     private String nome;
     private int idade;
     private String sexo;
+
+
+    //Construtor
     public Pessoa(String nome, int idade, String sexo) {
         this.nome = nome;
         this.idade = idade;
@@ -10,7 +13,7 @@ public class Pessoa {
 
 
     public void fazerAniversario(){
-        
+        this.idade++;
     }
 
     //Metodos get e set
@@ -32,6 +35,4 @@ public class Pessoa {
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
-
-    
 }

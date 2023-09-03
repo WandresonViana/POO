@@ -16,6 +16,10 @@ public class Livro {
         this.leitor = leitor;
     }
 
+    public void detalhes(){
+        
+    }
+
 
     //Get e Set
     public String getTitulo() {
