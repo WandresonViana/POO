@@ -18,5 +18,7 @@ public class MainRing {
         UEC01.marcarLuta(l[4], l[3]);
         UEC01.lutar();
 
+        l[4].status();
+
     }
 }
