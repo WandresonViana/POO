@@ -13,6 +13,7 @@ public class TelaMain extends JFrame{
     }
 
     public void telaMontar(){
-
+        this.setBounds(300, 300, 300, 300);
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 }
