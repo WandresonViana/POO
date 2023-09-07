@@ -1,7 +1,9 @@
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 
 public class TelaMain extends JFrame{
+    JLabel lLogin = new JLabel("Login");
 
     public static void main(String[] args){
        TelaMain nova = new TelaMain();
