@@ -10,5 +10,9 @@ public class LivrosMain {
         //Livros
         l[0] =  new Livro("O alto da aparecida", "Miranda Mirado", 250, p[0]);
         l[1] = new Livro("Carlota Carolina", "Cleia Correia", 600, p[1]);
+        l[2] = new Livro("Sol de rachar", "Mirosmar Close", 850, null);
+
+
+        l[0].detalhes();
     }
 }
