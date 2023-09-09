@@ -14,5 +14,7 @@ public class LivrosMain {
 
 
         System.out.println(l[0].detalhes());
+        System.out.println(" ");
+        System.out.println(l[1].detalhes());
     }
 }
