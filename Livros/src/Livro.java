@@ -83,24 +83,27 @@ public class Livro implements Publicacao{
 
     @Override
     public void fechar() {
+        this.aberto =false;
         
     }
 
 
     @Override
-    public void folhear() {
+    public void folhear(int p) {
+        this.paginaAtual = p;
        
     }
 
-
     @Override
     public void avancarPag() {
+        this.paginaAtual ++;
         
     }
 
 
     @Override
     public void voltarPag() {
+        this.paginaAtual--;
        
     }    
 }
