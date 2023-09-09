@@ -77,7 +77,7 @@ public class Livro implements Publicacao{
     //Métodos da interface
     @Override
     public void abrir() {
-        
+        this.aberto = true;
     }
 
 
@@ -102,10 +102,5 @@ public class Livro implements Publicacao{
     @Override
     public void voltarPag() {
        
-    }
-
-    
-
-    
-    
+    }    
 }
