@@ -1,9 +1,11 @@
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JTextField;
 
 
 public class TelaMain extends JFrame{
     JLabel lLogin = new JLabel("Login");
+    JTextField jTesT = new JTextField("");
 
     public static void main(String[] args){
        TelaMain nova = new TelaMain();
