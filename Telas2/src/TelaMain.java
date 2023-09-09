@@ -24,6 +24,9 @@ public class TelaMain extends JFrame{
 
         lLogin.setBounds(50, 50, 50, 50);
 
+
+        this.add(lLogin);
+
         this.setVisible(true);
     }
 }
