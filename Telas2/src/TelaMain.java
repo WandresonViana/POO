@@ -4,7 +4,7 @@ import javax.swing.JTextField;
 
 
 public class TelaMain extends JFrame{
-    JLabel lLogin = new JLabel("Login");
+    JLabel lLogin = new JLabel("Usuario");
     JTextField jTesT = new JTextField("");
 
     public static void main(String[] args){
@@ -22,7 +22,7 @@ public class TelaMain extends JFrame{
         this.setLayout(null);
         this.setTitle("Login");
 
-        lLogin.setBounds(50, 50, 50, 30);
+        lLogin.setBounds(40, 50, 50, 30);
         jTesT.setBounds(100, 50, 250, 30);
 
 
