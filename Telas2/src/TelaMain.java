@@ -22,8 +22,8 @@ public class TelaMain extends JFrame{
         this.setLayout(null);
         this.setTitle("Login");
 
-        lLogin.setBounds(50, 50, 50, 50);
-        jTesT.setBounds(100, 40, 80, 30);
+        lLogin.setBounds(50, 50, 50, 30);
+        jTesT.setBounds(100, 50, 250, 30);
 
 
         this.add(lLogin);
