@@ -74,7 +74,7 @@ public class Livro implements Publicacao{
         this.leitor = leitor;
     }
 
-
+    //Métodos da interface
     @Override
     public void abrir() {
         
