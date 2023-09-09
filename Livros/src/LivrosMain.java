@@ -13,6 +13,6 @@ public class LivrosMain {
         l[2] = new Livro("Sol de rachar", "Mirosmar Close", 850, null);
 
 
-        l[0].detalhes();
+        System.out.println(l[0].detalhes());
     }
 }
