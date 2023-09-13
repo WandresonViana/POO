@@ -79,8 +79,4 @@ public class Carro {
         this.ligado = ligado;
     }
     
-
-    
-
-    
 }
