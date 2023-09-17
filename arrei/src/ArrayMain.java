@@ -20,6 +20,8 @@ public class ArrayMain {
         nomes.add("Teresa");
         nomes.add("Vitor");
 
+        System.out.println(nomes.size());
+
         for(String n:nomes){
             System.out.println(n);
         }
