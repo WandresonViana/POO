@@ -24,7 +24,7 @@ public class ArrayMain {
         nomes.add("Teresa");
         nomes.add("Vitor");
 
-        System.out.println(nomes.lastIndexOf("Maria"));
+        System.out.println("O nome Maria está na posição: " + nomes.lastIndexOf("Maria"));
 
         for(String n:nomes){
             System.out.println(n);
