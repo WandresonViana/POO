@@ -11,16 +11,20 @@ public class ArrayMain {
         numeros.add(14);
         numeros.sort(null);
 
+       
+
         for(int con:numeros){
             System.out.println(con);
         }
+
+         System.out.println("###########################");
 
         nomes.add("Maria");
         nomes.add("Pedro");
         nomes.add("Teresa");
         nomes.add("Vitor");
 
-        System.out.println(nomes.size());
+        System.out.println(nomes.lastIndexOf("Maria"));
 
         for(String n:nomes){
             System.out.println(n);
