@@ -1,5 +1,7 @@
 public class HerancaMain {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+       Cachorro dog = new Cachorro("Fido",true, "Latido", 4, "PitBull", 25);
+
+       dog.emitirSom();
     }
 }
