@@ -1,8 +1,8 @@
 public class Cabra extends Animal{
+    private String cor;
 
-    public Cabra(String nome, boolean vivo, String som, int patas) {
-        super(nome, vivo, som, patas);
-        //TODO Auto-generated constructor stub
+    public Cabra(String cor){
+        super(cor, isVivo(), cor, getPatas())
     }
     
 }
