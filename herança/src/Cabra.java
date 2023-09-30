@@ -6,6 +6,10 @@ public class Cabra extends Animal{
         this.cor = cor;
     }
 
+    public void emitirSom(){
+        System.out.println("beeeeeeeeeeee");
+    }
+
     public String getCor() {
         return cor;
     }
