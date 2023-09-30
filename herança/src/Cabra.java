@@ -5,5 +5,14 @@ public class Cabra extends Animal{
         super(nome, vivo, som, patas);
         this.cor = cor;
     }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+    
     
 }
