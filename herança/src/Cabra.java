@@ -1,8 +1,9 @@
 public class Cabra extends Animal{
     private String cor;
 
-    public Cabra(String cor){
-        super(cor, isVivo(), cor, getPatas())
+    public Cabra(String nome,boolean vivo, String som, int patas, String cor){
+        super(nome, vivo, som, patas);
+        this.cor = cor;
     }
     
 }
