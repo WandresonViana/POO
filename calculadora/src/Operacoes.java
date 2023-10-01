@@ -7,6 +7,11 @@ public class Operacoes {
         this.valor02 = valor2;
     }
 
+    public void somar(double valor1, double valor2){
+        
+
+    }
+
     public double getValor01() {
         return valor01;
     }
