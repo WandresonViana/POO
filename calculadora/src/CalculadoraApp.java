@@ -9,7 +9,11 @@ public class CalculadoraApp {
         Numero num2 = new Numero();
         Numero resultado = new Numero();
 
-        System.out.println();
+        System.out.print("Digite o valor 1");
+        num1.setValor(scan.nextDouble());
+
+        System.out.print("Digite o valor 2: ");
+        num2.setValor(scan.nextDouble());
 
     }
 }
