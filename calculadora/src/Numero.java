@@ -4,4 +4,12 @@ public class Numero {
     public Numero(double valor){
         this.valor = valor;
     }
+
+    public void setValor(double valor){
+        this.valor = valor;
+    }
+
+    public double getValor(){
+        return this.valor;
+    }
 }
