@@ -1,8 +1,8 @@
 public class Numero {
     private double valor;
 
-    public Numero(double valor){
-        this.valor = valor;
+    public Numero(){
+        this.valor = 0;
     }
 
     public void setValor(double valor){
