@@ -16,7 +16,7 @@ public class CalculadoraApp {
         System.out.print("Digite o valor 2: ");
         num2.setValor(scan.nextDouble());
 
-        nn.somar(num1.getValor(), num2.getValor());
+        nn.somar();
         System.out.println("A soma vale" + nn.getRess());
 
     }

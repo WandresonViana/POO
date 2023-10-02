@@ -9,7 +9,7 @@ public class Operacoes {
         this.ress = 0;
     }
 
-    public double somar(double valor01, double valor02) {
+    public double somar() {
         this.ress = this.getValor01() + this.getValor02();
         return ress;
 
