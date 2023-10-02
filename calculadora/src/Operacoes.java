@@ -7,10 +7,12 @@ public class Operacoes {
         this.valor02 = valor2;
     }
 
-    public double somar() {
-         
+    public double somar() { 
         return this.getValor01() + this.getValor02();
+    }
 
+    public double subtrair(){
+        return this.getValor01() - this.getValor02();
     }
 
     public double getValor01() {

@@ -8,7 +8,7 @@ public class CalculadoraApp {
         Numero num1 =new Numero();
         Numero num2 = new Numero();
         Numero resultado = new Numero();
-        
+
         System.out.print("Digite o valor 1 ");
         num1.setValor(scan.nextDouble());
 
@@ -17,10 +17,11 @@ public class CalculadoraApp {
 
         Operacoes nn = new Operacoes(num1.getValor(), num2.getValor());
 
-        System.out.println("ola"+nn.getValor01());
-
         resultado.setValor(nn.somar());
-        System.out.println("A soma vale" + resultado.getValor());
+        System.out.println("A soma vale " + resultado.getValor());
+
+        resultado.setValor(nn.subtrair());
+        System.out.println("A subtração vale: " + resultado.getValor());
 
     }
 }
