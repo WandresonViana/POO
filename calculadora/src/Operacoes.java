@@ -18,6 +18,10 @@ public class Operacoes {
         return this.getValor01() * this.getValor02();
     }
 
+    public double dividir(){
+        return this.getValor01() / this.getValor02();
+    }
+
     public double getValor01() {
         return valor01;
     }
