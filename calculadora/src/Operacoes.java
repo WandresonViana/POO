@@ -14,6 +14,9 @@ public class Operacoes {
     public double subtrair(){
         return this.getValor01() - this.getValor02();
     }
+    public double multiplicar(){
+        return this.getValor01() * this.getValor02();
+    }
 
     public double getValor01() {
         return valor01;
