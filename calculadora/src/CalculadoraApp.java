@@ -17,8 +17,9 @@ public class CalculadoraApp {
         num2.setValor(scan.nextDouble());
 
         Operacoes nn = new Operacoes(num1.getValor(), num2.getValor());
+
         System.out.println("Digite a operação desejada: ");
-        op = scan.nextLine();
+        op = scan.next();
 
          switch(op){
             case "+":
