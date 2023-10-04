@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class CalculadoraApp {
 
     public static void main(String[] args) throws Exception {
+        String op = "S";
         Scanner scan = new Scanner(System.in);
 
         Numero num1 =new Numero();
@@ -17,7 +18,13 @@ public class CalculadoraApp {
 
         Operacoes nn = new Operacoes(num1.getValor(), num2.getValor());
 
-        resultado.setValor(nn.somar());
+         switch(op){
+            case "+":
+                resultado.setValor(nn.somar());
+            case "-":
+        }
+
+        
         System.out.println("A soma vale " + resultado.getValor());
 
         resultado.setValor(nn.subtrair());
