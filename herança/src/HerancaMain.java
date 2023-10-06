@@ -4,6 +4,8 @@ public class HerancaMain {
         Cabra lulu = new Cabra("Lulu", true, "Bee", 4, "Branca");
 
         dog.emitirSom();
+        dog.informacao();
         lulu.emitirSom();
+        lulu.informacao();
     }
 }
