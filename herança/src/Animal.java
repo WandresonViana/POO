@@ -13,6 +13,11 @@ public class Animal {
         this.patas = patas;
     }
 
+    public void informacao(){
+        System.out.println("Nome: " + this.getNome());
+        
+    }
+
     public void emitirSom(){
         System.out.println("Emitindo som!");
     }
