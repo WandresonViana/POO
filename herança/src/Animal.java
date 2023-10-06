@@ -16,7 +16,7 @@ public class Animal {
     public void informacao(){
         System.out.println("Nome: " + this.getNome());
         System.out.println("Esta vivo: " + this.isVivo());
-        
+        System.out.println("Som do Animal: " + this.getSom());
 
     }
 
