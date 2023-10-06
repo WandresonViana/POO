@@ -3,9 +3,11 @@ public class HerancaMain {
         Cachorro dog = new Cachorro("Fido",true, "Latido", 4, "PitBull", 25);
         Cabra lulu = new Cabra("Lulu", true, "Bee", 4, "Branca");
 
-        dog.emitirSom();
+        
         dog.informacao();
-        lulu.emitirSom();
+        dog.emitirSom();
+        
         lulu.informacao();
+        lulu.emitirSom();
     }
 }
