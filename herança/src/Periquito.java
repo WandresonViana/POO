@@ -6,6 +6,18 @@ public class Periquito extends Animal{
         this.cor = cor;
         this.peso = peso;
     }
+    public String getCor() {
+        return cor;
+    }
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+    public int getPeso() {
+        return peso;
+    }
+    public void setPeso(int peso) {
+        this.peso = peso;
+    }
 
     
 }
