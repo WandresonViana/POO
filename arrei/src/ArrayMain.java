@@ -23,7 +23,7 @@ public class ArrayMain {
         nomes.add("Pedro");
         nomes.add("Teresa");
         nomes.add("Vitor");
-        nomes.remove("Maria");
+        nomes.remove("Vitor");
 
         System.out.println("O nome Maria está na posição: " + nomes.lastIndexOf("Maria"));
 
