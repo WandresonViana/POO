@@ -1,5 +1,5 @@
 package Crud.dao;
 
-public class Coneccao {
+public class Conexao {
     
 }
