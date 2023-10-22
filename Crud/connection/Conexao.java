@@ -5,20 +5,28 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Conexao {
-    private static final String USERNAME = "root";
+    private final String classDriver = "com.mysql.cj.jdbc.Driver";
+    private final String DATABASE_URL = "jdbc:mysql://localhost:3306/mercado";
+    private final String USERNAME = "root";
+    private final String PASSWORD = "";
+    
 
-    private static final String PASSWORD = "";
+    public Connection conexao(){
+        Connection conect = null;
 
-    private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/agenda";
+        try {
+            //Carregando Driver
+            Class.forName(classDriver);
 
+            //Obter conexão
+            DriverManager.getConnection(DATABASE_URL, USERNAME, PASSWORD);
 
-    public static Connection createConnectionToMySQL() throws ClassNotFoundException, SQLException{
-        Class.forName("com.mysql.jdbc.Driver");
-
-        Connection connection = DriverManager.getConnection(DATABASE_URL, USERNAME, PASSWORD);
-
-        return connection;
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
     }
+
+
     
     
 }
