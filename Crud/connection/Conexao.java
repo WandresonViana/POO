@@ -19,14 +19,6 @@ public class Conexao {
 
         return connection;
     }
-
-    public static void main(String[] args) throws ClassNotFoundException, SQLException {
-        Connection conct = createConnectionToMySQL();
-
-        if(conct!=null){
-            System.out.println("Conectado ao banco de dados!");
-            conct.close();
-        }
-    }
+    
     
 }
