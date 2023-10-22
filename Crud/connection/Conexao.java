@@ -20,14 +20,16 @@ public class Conexao {
 
             //Obter conexão
             conect = DriverManager.getConnection(DATABASE_URL, USERNAME, PASSWORD);
+            System.out.println("Conectado!");
 
-        } catch (Exception e) {
+        } catch (ClassNotFoundException | SQLException e) {
             // TODO: handle exception
+            System.out.println(e.getMessage());
         }
         return conect;
     }
 
-
-    
-    
+    public void desligarConexao(Connection con) throws SQLException{
+        con.close();
+    }    
 }
