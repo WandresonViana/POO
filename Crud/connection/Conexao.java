@@ -19,11 +19,12 @@ public class Conexao {
             Class.forName(classDriver);
 
             //Obter conexão
-            DriverManager.getConnection(DATABASE_URL, USERNAME, PASSWORD);
+            conect = DriverManager.getConnection(DATABASE_URL, USERNAME, PASSWORD);
 
         } catch (Exception e) {
             // TODO: handle exception
         }
+        return conect;
     }
 
 
