@@ -9,17 +9,17 @@ public class Conexao {
     private final String DATABASE_URL = "jdbc:mysql://localhost:3306/mercado";
     private final String USERNAME = "root";
     private final String PASSWORD = "";
-    
+    Connection conect = null;
 
     public Connection conexao(){
-        Connection conect = null;
+        
 
         try {
             //Carregando Driver
             Class.forName(classDriver);
 
             //Obter conexão
-            conect = DriverManager.getConnection(DATABASE_URL, USERNAME, PASSWORD);
+            this.conect = DriverManager.getConnection(DATABASE_URL, USERNAME, PASSWORD);
             System.out.println("Conectado!");
 
         } catch (ClassNotFoundException | SQLException e) {
