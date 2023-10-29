@@ -1,3 +1,4 @@
+package Crud.model;
 public class Venda {
     private int id_venda;
     private String data_vanda;
