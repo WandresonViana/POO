@@ -11,6 +11,9 @@ public class Venda {
         this.quantidade_venda = quantidade_venda;
         this.id_produto = id_produto;
     }
+    public Venda(){
+        
+    }
 
     public int getId_venda() {
         return id_venda;
