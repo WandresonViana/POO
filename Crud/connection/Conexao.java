@@ -31,5 +31,7 @@ public class Conexao {
 
     public void desligarConexao(Connection con) throws SQLException{
         con.close();
-    }    
+    } 
+    
+    public 
 }
