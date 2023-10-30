@@ -1,5 +1,6 @@
 package Crud.controller;
 
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -12,14 +13,16 @@ import Crud.model.Produto;
 public class CrudProduto {
 
     public List<Produto> lista(){
-        Conexao con = new Conexao();
+        Connection con = null;
+        Conexao conexao = new Conexao();
         String sql = "SELECT * FROM produto";
         Produto produto = new Produto();
         List<Produto> produtos = new ArrayList<>();
-        PreparedStatement ps;
+        PreparedStatement stmt;
 
         try {
-            PreparedStatement stmt = con.prepareStatement(sql);
+            con = conexao.conexao();
+            stmt = con.prepareStatement(sql);
             ResultSet resultado = stmt.executeQuery();
             while (resultado.next()) {
                 produto.setId_produto(resultado.getInt("id"));

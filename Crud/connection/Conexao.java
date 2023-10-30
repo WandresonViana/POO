@@ -24,7 +24,7 @@ public class Conexao {
             System.out.println("Conectado!");
 
         } catch (ClassNotFoundException | SQLException e) {
-            // TODO: handle exception
+           
             System.out.println(e.getMessage());
         }
         return conect;
