@@ -16,6 +16,7 @@ public class CrudProduto {
         String sql = "SELECT * FROM produto";
         Produto produto = new Produto();
         List<Produto> produtos = new ArrayList<>();
+        PreparedStatement ps;
 
         try {
             PreparedStatement stmt = con.prepareStatement(sql);
