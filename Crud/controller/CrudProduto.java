@@ -18,7 +18,7 @@ public class CrudProduto {
         List<Produto> produtos = new ArrayList<>();
 
         try {
-            PreparedStatement stmt = con.PreparedStatement(sql);
+            PreparedStatement stmt = con.prepareStatement(sql);
             ResultSet resultado = stmt.executeQuery();
             while (resultado.next()) {
                 produto.setId_produto(resultado.getInt("id"));
