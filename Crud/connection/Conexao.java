@@ -6,10 +6,10 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class Conexao {
-    private final String classDriver = "com.mysql.cj.jdbc.Driver";
-    private final String DATABASE_URL = "jdbc:mysql://localhost:3306/mercado";
-    private final String USERNAME = "root";
-    private final String PASSWORD = "";
+    private  String classDriver = "com.mysql.cj.jdbc.Driver";
+    private  String DATABASE_URL = "jdbc:mysql://localhost:3306/mercado";
+    private  String USERNAME = "root";
+    private  String PASSWORD = "";
     Connection conect = null;
 
     public Connection conexao(){
