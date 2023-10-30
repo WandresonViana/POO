@@ -25,7 +25,7 @@ public class CrudProduto {
             stmt = con.prepareStatement(sql);
             ResultSet resultado = stmt.executeQuery();
             while (resultado.next()) {
-                produto.setId_produto(resultado.getInt("id"));
+                produto.setId_produto(resultado.getInt("id_produto"));
                 produto.setNome(resultado.getString("nome"));
                 produto.setPreco(resultado.getDouble("preco"));
                 produto.setQuantidade(resultado.getInt("quantidade"));
