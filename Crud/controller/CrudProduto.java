@@ -11,18 +11,19 @@ import Crud.connection.Conexao;
 import Crud.model.Produto;
 
 public class CrudProduto {
-
-    public List<Produto> lista(){
         Connection con = null;
         Conexao conexao = new Conexao();
+        PreparedStatement stmt;
+        ResultSet resultado;
+
+    public List<Produto> lista(){
         String sql = "SELECT * FROM produto";
         List<Produto> produtos = new ArrayList<>();
-        PreparedStatement stmt;
 
         try {
             con = conexao.conexao();
             stmt = con.prepareStatement(sql);
-            ResultSet resultado = stmt.executeQuery();
+            resultado = stmt.executeQuery();
             while (resultado.next()) {
                 Produto produto = new Produto();
                 produto.setId_produto(resultado.getInt("id_produto"));
@@ -41,6 +42,15 @@ public class CrudProduto {
     }
 
     public void adicionarProduto(){
+        String sql = "insert into produto(nome, preco, quantidade) values (?,?,?)";
+
+        try {
+            con = conexao.conexao();
+            stmt = con.prepareStatement(sql);
+            
+        } catch (SQLException e) {
+            e.getMessage();
+        }
 
     }
     
