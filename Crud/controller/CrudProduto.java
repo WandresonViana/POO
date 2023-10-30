@@ -16,7 +16,6 @@ public class CrudProduto {
         Connection con = null;
         Conexao conexao = new Conexao();
         String sql = "SELECT * FROM produto";
-        Produto produto = new Produto();
         List<Produto> produtos = new ArrayList<>();
         PreparedStatement stmt;
 
@@ -25,6 +24,7 @@ public class CrudProduto {
             stmt = con.prepareStatement(sql);
             ResultSet resultado = stmt.executeQuery();
             while (resultado.next()) {
+                Produto produto = new Produto();
                 produto.setId_produto(resultado.getInt("id_produto"));
                 produto.setNome(resultado.getString("nome"));
                 produto.setPreco(resultado.getDouble("preco"));
