@@ -39,5 +39,9 @@ public class CrudProduto {
 
         return produtos;
     }
+
+    public void adicionarProduto(){
+
+    }
     
 }
