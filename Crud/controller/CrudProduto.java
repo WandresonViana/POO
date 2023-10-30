@@ -1,6 +1,8 @@
 package Crud.controller;
 
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,8 +19,17 @@ public class CrudProduto {
 
         try {
             PreparedStatement stmt = con.PreparedStatement(sql);
-        } catch (Exception e) {
-            // TODO: handle exception
+            ResultSet resultado = stmt.executeQuery();
+            while (resultado.next()) {
+                produto.setId_produto(resultado.getInt("id"));
+                produto.setNome(resultado.getString("nome"));
+                produto.setPreco(resultado.getDouble("preco"));
+                produto.setQuantidade(resultado.getInt("quantidade"));
+                produtos.add(produto);
+                
+            }
+        } catch (SQLException e) {
+            e.getMessage();
         }
 
 
