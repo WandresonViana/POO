@@ -3,6 +3,7 @@ package Crud.connection;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.List;
 
 public class Conexao {
     private final String classDriver = "com.mysql.cj.jdbc.Driver";
@@ -32,6 +33,4 @@ public class Conexao {
     public void desligarConexao(Connection con) throws SQLException{
         con.close();
     } 
-    
-    public 
 }
