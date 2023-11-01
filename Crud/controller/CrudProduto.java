@@ -57,9 +57,10 @@ public class CrudProduto {
     public void buscar(int valor){
         String sql = "Select * from produto where id = ?";
         try {
-            
-        } catch (Exception e) {
-            // TODO: handle exception
+            con = conexao.conexao();
+            stmt = con.prepareStatement(sql);
+        } catch (SQLException e) {
+            e.getMessage();
         }
     }
     
