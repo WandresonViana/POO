@@ -53,5 +53,9 @@ public class CrudProduto {
         }
 
     }
+
+    public void buscar(int valor){
+        
+    }
     
 }
