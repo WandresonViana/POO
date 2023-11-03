@@ -56,10 +56,17 @@ public class CrudProduto {
 
     public void buscar(String valor){
         String sql = "Select * from produto where noem LIKE = ?";
+
         try {
             con = conexao.conexao();
             stmt = con.prepareStatement(sql);
             stmt.setString(1, valor);
+            resultado = stmt.executeQuery();
+
+            while (resultado.next()) {
+                int id = resultado.getInt("id_produto");
+                String nome = resultado.getString("nome");
+            }
         } catch (SQLException e) {
             e.getMessage();
         }
