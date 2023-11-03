@@ -66,6 +66,7 @@ public class CrudProduto {
             while (resultado.next()) {
                 int id = resultado.getInt("id_produto");
                 String nome = resultado.getString("nome");
+                
             }
         } catch (SQLException e) {
             e.getMessage();
