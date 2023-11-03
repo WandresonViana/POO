@@ -54,12 +54,12 @@ public class CrudProduto {
 
     }
 
-    public void buscar(int valor){
-        String sql = "Select * from produto where id = ?";
+    public void buscar(String valor){
+        String sql = "Select * from produto where noem LIKE = ?";
         try {
             con = conexao.conexao();
             stmt = con.prepareStatement(sql);
-            stmt.executeQuery();
+            stmt.setString(1, valor);
         } catch (SQLException e) {
             e.getMessage();
         }
