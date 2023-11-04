@@ -55,7 +55,7 @@ public class CrudProduto {
     }
 
     public void buscar(String valor) throws SQLException{
-        String sql = "Select * from produto where noem LIKE = ?";
+        String sql = "SELECT * FROM produto WHERE nome like ?";
 
         try {
             con = conexao.conexao();
@@ -67,7 +67,7 @@ public class CrudProduto {
                 int id = resultado.getInt("id_produto");
                 String nome = resultado.getString("nome");
                 double preco = resultado.getDouble("preco");
-                int quantidade = resultado.getInt("qauntidade");
+                int quantidade = resultado.getInt("quantidade");
                 
                 System.out.println("ID: " + id);
                 System.out.println("Nome: " + nome);
