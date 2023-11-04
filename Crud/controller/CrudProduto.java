@@ -60,7 +60,7 @@ public class CrudProduto {
         try {
             con = conexao.conexao();
             stmt = con.prepareStatement(sql);
-            stmt.setString(1, valor);
+            stmt.setString(1, "%"+ valor + "%");
             resultado = stmt.executeQuery();
 
             while (resultado.next()) {
