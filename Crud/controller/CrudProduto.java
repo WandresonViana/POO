@@ -54,7 +54,7 @@ public class CrudProduto {
 
     }
 
-    public void buscar(String valor){
+    public void buscar(String valor) throws SQLException{
         String sql = "Select * from produto where noem LIKE = ?";
 
         try {
@@ -69,9 +69,15 @@ public class CrudProduto {
                 double preco = resultado.getDouble("preco");
                 int quantidade = resultado.getInt("qauntidade");
                 
+                System.out.println("ID: " + id);
+                System.out.println("Nome: " + nome);
+                System.out.println("Preço: " + preco);
+                System.out.println("Quantidade: " + quantidade);
             }
         } catch (SQLException e) {
             e.getMessage();
+        }finally{
+            conexao.desligarConexao(con);
         }
     }
     
