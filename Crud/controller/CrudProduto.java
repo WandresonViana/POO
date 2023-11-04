@@ -66,6 +66,8 @@ public class CrudProduto {
             while (resultado.next()) {
                 int id = resultado.getInt("id_produto");
                 String nome = resultado.getString("nome");
+                double preco = resultado.getDouble("preco");
+                int quantidade = resultado.getInt("qauntidade");
                 
             }
         } catch (SQLException e) {
