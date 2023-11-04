@@ -16,7 +16,7 @@ public class CrudProduto {
         PreparedStatement stmt;
         ResultSet resultado;
 
-    public List<Produto> lista(){
+    public List<Produto> lista() throws SQLException{
         String sql = "SELECT * FROM produto";
         List<Produto> produtos = new ArrayList<>();
 
@@ -35,9 +35,9 @@ public class CrudProduto {
             }
         } catch (SQLException e) {
             e.getMessage();
+        }finally{
+            conexao.desligarConexao(con);
         }
-
-
         return produtos;
     }
 

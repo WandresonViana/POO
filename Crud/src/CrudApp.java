@@ -7,12 +7,13 @@ import Crud.model.Produto;
 public class CrudApp {
     public static void main(String[] args) throws Exception {
       CrudProduto crudproduto = new CrudProduto();
+      crudproduto.buscar("Fruta");
       
-      for(Produto produto : crudproduto.lista()){
+      /*for(Produto produto : crudproduto.lista()){
             System.out.println("ID: " + produto.getId_produto());
             System.out.println("Nome: " + produto.getNome());
             System.out.println("Preço: " + produto.getPreco());
             System.out.println("Quantidade: " + produto.getQuantidade());
-       }
+       } */
     }
 }
