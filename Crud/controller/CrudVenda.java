@@ -18,8 +18,15 @@ public class CrudVenda {
 
 
     public List<Venda> listarVendas(){
-        String sql = "SELECT * FROM produto";
+        String sql = "SELECT * FROM venda LIKE ?";
         List<Produto> produtos = new ArrayList<>();
+
+        try {
+            
+        } catch (Exception e) {
+            
+        }
+        
 
         return venda;
     }
