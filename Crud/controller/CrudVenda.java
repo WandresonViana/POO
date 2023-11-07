@@ -17,7 +17,7 @@ public class CrudVenda {
 
     public List<Venda> listarVendas(){
 
-        
+        return venda;
     }
 
     public void cadastraVenda(){
