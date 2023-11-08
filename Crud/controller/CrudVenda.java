@@ -23,6 +23,9 @@ public class CrudVenda {
         List<Produto> produtos = new ArrayList<>();
 
         try {
+            con = conexao.conexao();
+            stmt = con.prepareStatement(sql);
+            resultado = stmt.executeQuery();
             
         } catch (SQLException e) {
             e.getMessage();
