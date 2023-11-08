@@ -27,7 +27,9 @@ public class CrudVenda {
             stmt = con.prepareStatement(sql);
             resultado = stmt.executeQuery();
             while (resultado.next()) {
-                
+                Venda venda = new Venda();
+                venda.setId_venda(resultado.getInt("id_venda"));
+                venda.setData_vanda(resultado.getString("data_venda"));
             }
             
         } catch (SQLException e) {
