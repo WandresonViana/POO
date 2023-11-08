@@ -82,7 +82,8 @@ public class CrudProduto {
     }
 
     public void alterarProduto(){
-        
+        con = conexao.conexao();
+
     }
     
 }
