@@ -80,5 +80,9 @@ public class CrudProduto {
             conexao.desligarConexao(con);
         }
     }
+
+    public void alterarProduto(){
+        
+    }
     
 }
