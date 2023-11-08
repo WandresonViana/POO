@@ -26,6 +26,9 @@ public class CrudVenda {
             con = conexao.conexao();
             stmt = con.prepareStatement(sql);
             resultado = stmt.executeQuery();
+            while (resultado.next()) {
+                
+            }
             
         } catch (SQLException e) {
             e.getMessage();
