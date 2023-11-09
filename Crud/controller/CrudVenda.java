@@ -20,7 +20,7 @@ public class CrudVenda {
 
     public List<Venda> listarVendas(){
         String sql = "SELECT * FROM venda LIKE ?";
-        List<Produto> produtos = new ArrayList<>();
+        List<Venda> vendas = new ArrayList<>();
 
         try {
             con = conexao.conexao();
@@ -32,6 +32,7 @@ public class CrudVenda {
                 venda.setData_vanda(resultado.getString("data_venda"));
                 venda.setQuantidade_venda(resultado.getDouble("quantidade_venda"));
                 venda.setId_produto(resultado.getInt("id_produto"));
+
             }
             
         } catch (SQLException e) {

@@ -31,7 +31,7 @@ public class CrudProduto {
                 produto.setPreco(resultado.getDouble("preco"));
                 produto.setQuantidade(resultado.getInt("quantidade"));
                 produtos.add(produto);
-                produtos.add(produto);
+                
             }
         } catch (SQLException e) {
             e.getMessage();
