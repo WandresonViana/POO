@@ -1,13 +1,13 @@
 package Crud.model;
 public class Venda {
     private int id_venda;
-    private String data_vanda;
+    private String data_venda;
     private double quantidade_venda;
     private int id_produto;
     
-    public Venda(int id_venda, String data_vanda, double quantidade_venda, int id_produto) {
+    public Venda(int id_venda, String data_venda, double quantidade_venda, int id_produto) {
         this.id_venda = id_venda;
-        this.data_vanda = data_vanda;
+        this.data_venda = data_venda;
         this.quantidade_venda = quantidade_venda;
         this.id_produto = id_produto;
     }
@@ -24,11 +24,11 @@ public class Venda {
     }
 
     public String getData_vanda() {
-        return data_vanda;
+        return data_venda;
     }
 
-    public void setData_vanda(String data_vanda) {
-        this.data_vanda = data_vanda;
+    public void setData_vanda(String data_venda) {
+        this.data_venda = data_venda;
     }
 
     public double getQuantidade_venda() {

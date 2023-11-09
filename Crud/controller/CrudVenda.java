@@ -30,6 +30,8 @@ public class CrudVenda {
                 Venda venda = new Venda();
                 venda.setId_venda(resultado.getInt("id_venda"));
                 venda.setData_vanda(resultado.getString("data_venda"));
+                venda.setQuantidade_venda(resultado.getDouble("quantidade_venda"));
+                venda.setId_produto(resultado.getInt("id_produto"));
             }
             
         } catch (SQLException e) {
