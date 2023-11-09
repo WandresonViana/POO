@@ -32,6 +32,7 @@ public class CrudVenda {
                 venda.setData_vanda(resultado.getString("data_venda"));
                 venda.setQuantidade_venda(resultado.getDouble("quantidade_venda"));
                 venda.setId_produto(resultado.getInt("id_produto"));
+                vendas.add(venda);
 
             }
             
