@@ -44,6 +44,10 @@ public class CrudVenda {
         return vendas;
     }
 
+    public void buscarVenda(String nomeVenda){
+        
+    }
+
     public void cadastraVenda(){
 
     }
