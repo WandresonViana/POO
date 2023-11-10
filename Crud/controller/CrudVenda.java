@@ -46,6 +46,12 @@ public class CrudVenda {
 
     public void buscarVenda(int id){
         String sql = "SELECT * FROM vendas WHERE id_venda = ?";
+
+        try {
+            con = conexao.conexao();
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
     }
 
     public void cadastraVenda(){
