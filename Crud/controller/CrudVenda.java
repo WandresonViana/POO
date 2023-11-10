@@ -44,8 +44,8 @@ public class CrudVenda {
         return vendas;
     }
 
-    public void buscarVenda(String nomeVenda){
-        
+    public void buscarVenda(int id){
+        String sql = "SELECT * FROM vendas WHERE id_venda = ?";
     }
 
     public void cadastraVenda(){
