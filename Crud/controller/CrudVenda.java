@@ -41,7 +41,7 @@ public class CrudVenda {
         }
         
 
-        return venda;
+        return vendas;
     }
 
     public void cadastraVenda(){
