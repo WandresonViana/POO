@@ -49,8 +49,8 @@ public class CrudVenda {
 
         try {
             con = conexao.conexao();
-        } catch (Exception e) {
-            // TODO: handle exception
+        } catch (SQLException e) {
+            e.getMessage();
         }
     }
 
