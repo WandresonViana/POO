@@ -50,6 +50,7 @@ public class CrudVenda {
         try {
             con = conexao.conexao();
             stmt = con.prepareStatement(sql);
+            stmt.setString(1, "%" + id + "%");
         } catch (SQLException e) {
             e.getMessage();
         }
