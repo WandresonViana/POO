@@ -82,8 +82,14 @@ public class CrudProduto {
     }
 
     public void alterarProduto(){
-        con = conexao.conexao();
-        String sql = "ALTER";
+        String sql = "UPDATE produto SET quantidade = ? WHERE id_produto=?";
+         try {
+            con = conexao.conexao();
+            stmt = con.prepareStatement(sql);
+            stmt.setString(1, "id_produto");
+         } catch (SQLException e) {
+            e.getMessage();
+         }
 
     }
     
