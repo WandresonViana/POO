@@ -81,12 +81,13 @@ public class CrudProduto {
         }
     }
 
-    public void alterarProduto(){
+    public void alterarProduto(int id, int quantidade){
         String sql = "UPDATE produto SET quantidade = ? WHERE id_produto=?";
          try {
             con = conexao.conexao();
             stmt = con.prepareStatement(sql);
-            stmt.setString(1, "id_produto");
+            stmt.setInt(1, quantidade);
+            stmt.setInt(2, id);
          } catch (SQLException e) {
             e.getMessage();
          }
