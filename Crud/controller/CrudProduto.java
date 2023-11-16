@@ -81,7 +81,7 @@ public class CrudProduto {
         }
     }
 
-    public void alterarProduto(int id, int quantidade){
+    public void alterarProduto(int id, int quantidade) throws SQLException{
         String sql = "UPDATE produto SET quantidade = ? WHERE id_produto=?";
          try {
             con = conexao.conexao();
@@ -90,7 +90,9 @@ public class CrudProduto {
             stmt.setInt(2, id);
             stmt.execute();
          } catch (SQLException e) {
-            e.getMessage();
+            System.out.println(e.getMessage());
+         }finally{
+            conexao.desligarConexao(con);
          }
 
     }
