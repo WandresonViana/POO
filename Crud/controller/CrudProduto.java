@@ -88,6 +88,7 @@ public class CrudProduto {
             stmt = con.prepareStatement(sql);
             stmt.setInt(1, quantidade);
             stmt.setInt(2, id);
+            stmt.execute();
          } catch (SQLException e) {
             e.getMessage();
          }
