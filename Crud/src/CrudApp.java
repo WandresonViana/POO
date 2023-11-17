@@ -7,7 +7,7 @@ import Crud.model.Produto;
 public class CrudApp {
     public static void main(String[] args) throws Exception {
       CrudProduto crudP= new CrudProduto();
-      crudP.buscar("L");
+      crudP.buscar("s");
       
       /*for(Produto produto : crudproduto.lista()){
             System.out.println("ID: " + produto.getId_produto());
