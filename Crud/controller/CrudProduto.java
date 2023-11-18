@@ -98,7 +98,7 @@ public class CrudProduto {
     }
 
     public void excluir(int id){
-        String sql;
+        String sql = "DELETE";
         
     }
     
