@@ -97,7 +97,7 @@ public class CrudProduto {
 
     }
 
-    public void excluir(int id){
+    public void excluir(int id) throws SQLException{
         String sql = "DELETE FROM produto WHERE id_produto= ?";
 
         try {
@@ -107,7 +107,9 @@ public class CrudProduto {
             stmt.executeQuery();
             
         } catch (SQLException e) {
-            // TODO: handle exception
+            System.out.println(e.getMessage());
+        }finally{
+            conexao.desligarConexao(con);
         }
         
     }
