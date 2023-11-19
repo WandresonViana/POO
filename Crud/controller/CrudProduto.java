@@ -102,6 +102,9 @@ public class CrudProduto {
 
         try {
             con = conexao.conexao();
+            stmt = con.prepareStatement(sql);
+            stmt.setInt(1, id);
+            stmt.executeQuery();
             
         } catch (SQLException e) {
             // TODO: handle exception
