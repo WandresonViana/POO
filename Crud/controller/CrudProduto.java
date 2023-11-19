@@ -98,7 +98,13 @@ public class CrudProduto {
     }
 
     public void excluir(int id){
-        String sql = "DELETE FROM ";
+        String sql = "DELETE FROM produto WHERE id_produto= ?";
+
+        try {
+            
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
         
     }
     
