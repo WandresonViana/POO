@@ -101,6 +101,7 @@ public class CrudProduto {
         String sql = "DELETE FROM produto WHERE id_produto= ?";
 
         try {
+            con = conexao.conexao();
             
         } catch (SQLException e) {
             // TODO: handle exception
