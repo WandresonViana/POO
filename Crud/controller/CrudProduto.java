@@ -102,7 +102,7 @@ public class CrudProduto {
 
         try {
             
-        } catch (Exception e) {
+        } catch (SQLException e) {
             // TODO: handle exception
         }
         
