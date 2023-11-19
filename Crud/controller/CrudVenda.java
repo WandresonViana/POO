@@ -63,11 +63,11 @@ public class CrudVenda {
     }
 
     public void cadastraVenda(){
-
+        String sql = "";
     }
 
     public void excluirVenda(){
-        
+        String sql = "";
     }
 
 }
