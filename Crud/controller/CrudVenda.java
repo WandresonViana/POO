@@ -39,8 +39,6 @@ public class CrudVenda {
         } catch (SQLException e) {
             e.getMessage();
         }
-        
-
         return vendas;
     }
 
@@ -63,7 +61,7 @@ public class CrudVenda {
     }
 
     public void cadastraVenda(){
-        String sql = "";
+        String sql = "insert into venda(data_venda, quantidade_venda, id_produto) values (?,?,?)";
     }
 
     public void excluirVenda(){
