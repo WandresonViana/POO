@@ -54,7 +54,7 @@ public class CrudVenda {
             resultado = stmt.executeQuery();
 
             while (resultado.next()) {
-                int
+                int id_venda = resultado.getInt("id_venda");
                 
             }
         } catch (SQLException e) {
