@@ -62,6 +62,13 @@ public class CrudVenda {
 
     public void cadastraVenda(){
         String sql = "insert into venda(data_venda, quantidade_venda, id_produto) values (?,?,?)";
+
+        try {
+            con = conexao.conexao();
+            stmt = con.prepareStatement(sql);
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
     }
 
     public void excluirVenda(){
