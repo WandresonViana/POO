@@ -60,7 +60,7 @@ public class CrudVenda {
         }
     }
 
-    public void cadastraVenda(){
+    public void cadastraVenda(String data, ){
         String sql = "insert into venda(data_venda, quantidade_venda, id_produto) values (?,?,?)";
         String data;
 
