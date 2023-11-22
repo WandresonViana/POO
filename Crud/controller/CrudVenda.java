@@ -62,6 +62,7 @@ public class CrudVenda {
 
     public void cadastraVenda(){
         String sql = "insert into venda(data_venda, quantidade_venda, id_produto) values (?,?,?)";
+        String data;
 
         try {
             con = conexao.conexao();
@@ -72,7 +73,7 @@ public class CrudVenda {
     }
 
     public void alteraVenda(){
-        
+
     }
 
     public void excluirVenda(){
