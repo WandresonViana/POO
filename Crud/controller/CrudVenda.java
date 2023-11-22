@@ -72,7 +72,7 @@ public class CrudVenda {
     }
 
     public void excluirVenda(){
-        String sql = "";
+        String sql = "DELETE FROM";
     }
 
 }
