@@ -67,7 +67,7 @@ public class CrudVenda {
             con = conexao.conexao();
             stmt = con.prepareStatement(sql);
         } catch (Exception e) {
-            // TODO: handle exception
+            
         }
     }
 
