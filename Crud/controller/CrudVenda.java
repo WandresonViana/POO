@@ -73,6 +73,13 @@ public class CrudVenda {
     }
 
     public void alteraVenda(){
+        String sql;
+
+        try {
+            
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
 
     }
 
