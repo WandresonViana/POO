@@ -73,7 +73,7 @@ public class CrudVenda {
     }
 
     public void alteraVenda(){
-        String sql;
+        String sql = "";
 
         try {
             
