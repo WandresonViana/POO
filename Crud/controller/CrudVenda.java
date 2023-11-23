@@ -78,6 +78,12 @@ public class CrudVenda {
 
     public void excluirVenda(){
         String sql = "DELETE FROM";
+
+        try {
+            
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
     }
 
 }
