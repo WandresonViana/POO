@@ -79,8 +79,9 @@ public class CrudVenda {
             con = conexao.conexao();
             stmt = con.prepareStatement(sql);
             stmt.setInt(1, id);
+            stmt.executeQuery();
             
-        } catch (Exception e) {
+        } catch (SQLException e) {
             
         }
 
