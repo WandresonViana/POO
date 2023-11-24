@@ -73,7 +73,7 @@ public class CrudVenda {
     }
 
     public void alteraVenda(){
-        String sql = "UPDATE venda";
+        String sql = "UPDATE venda SET quantidade_venda";
 
         try {
             
