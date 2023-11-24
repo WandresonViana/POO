@@ -72,10 +72,13 @@ public class CrudVenda {
         }
     }
 
-    public void alteraVenda(){
+    public void alteraVenda(int id){
         String sql = "UPDATE venda SET quantidade_venda WHERE id_venda = ?";
 
         try {
+            con = conexao.conexao();
+            stmt = con.prepareStatement(sql);
+            stmt.setInt(1, id);
             
         } catch (Exception e) {
             
