@@ -82,6 +82,7 @@ public class CrudVenda {
             stmt.executeQuery();
             
         } catch (SQLException e) {
+            System.out.println(e.getMessage());
             
         }
 
