@@ -93,7 +93,7 @@ public class CrudVenda {
 
         try {
             
-        } catch (Exception e) {
+        } catch (SQLException e) {
             
         }
     }
