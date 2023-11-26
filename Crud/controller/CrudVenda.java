@@ -89,12 +89,12 @@ public class CrudVenda {
     }
 
     public void excluirVenda(){
-        String sql = "DELETE FROM";
+        String sql = "DELETE FROM venda";
 
         try {
             
         } catch (Exception e) {
-            // TODO: handle exception
+            
         }
     }
 
