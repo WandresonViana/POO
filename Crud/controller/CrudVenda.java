@@ -88,15 +88,15 @@ public class CrudVenda {
 
     }
 
-    public void excluirVenda(){
-        String sql = "DELETE FROM venda";
+    public void excluirVenda(int id){
+        String sql = "DELETE FROM venda WHERE id_venda = ?";
 
         try {
             con = conexao.conexao();
             stmt = con.prepareStatement(sql);
             
         } catch (SQLException e) {
-            
+            System.out.println(e.getMessage());
         }
     }
 
