@@ -94,7 +94,7 @@ public class CrudVenda {
         try {
             con = conexao.conexao();
             stmt = con.prepareStatement(sql);
-            
+            stmt.setInt(1, id);
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
