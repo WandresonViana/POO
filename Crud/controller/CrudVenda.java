@@ -93,6 +93,7 @@ public class CrudVenda {
 
         try {
             con = conexao.conexao();
+            stmt = con.prepareStatement(sql);
             
         } catch (SQLException e) {
             
