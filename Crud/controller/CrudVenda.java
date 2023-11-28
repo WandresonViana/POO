@@ -85,7 +85,6 @@ public class CrudVenda {
             System.out.println(e.getMessage());
             
         }
-
     }
 
     public void excluirVenda(int id){
@@ -96,7 +95,7 @@ public class CrudVenda {
             stmt = con.prepareStatement(sql);
             stmt.setInt(1, id);
             stmt.executeQuery();
-            
+
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
