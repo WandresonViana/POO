@@ -92,6 +92,7 @@ public class CrudVenda {
         String sql = "DELETE FROM venda";
 
         try {
+            con = conexao.conexao();
             
         } catch (SQLException e) {
             
