@@ -53,6 +53,7 @@ public class CrudVenda {
 
             while (resultado.next()) {
                 int id_venda = resultado.getInt("id_venda");
+                String data = resultado.getString("");
                 
             }
         } catch (SQLException e) {
