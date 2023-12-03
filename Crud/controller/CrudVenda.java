@@ -70,6 +70,7 @@ public class CrudVenda {
             stmt = con.prepareStatement(sql);
             stmt.setString(1, data);
             stmt.setInt(2, quantidade);
+            stmt.setInt(3, id);
         } catch (SQLException e) {
             System.out.println(e.getMessage());
             
