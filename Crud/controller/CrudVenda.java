@@ -57,7 +57,7 @@ public class CrudVenda {
                 
             }
         } catch (SQLException e) {
-            e.getMessage();
+            System.out.println(e.getMessage());
         }
     }
 
@@ -71,6 +71,7 @@ public class CrudVenda {
             stmt.setString(1, data);
             stmt.setInt(2, quantidade);
         } catch (SQLException e) {
+            System.out.println(e.getMessage());
             
         }
     }
